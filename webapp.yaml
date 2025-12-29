@@ -42,7 +42,7 @@ kind: Service
 metadata:
   name: webapp-service
 spec:
-  type: NodePort # make service externallly accessible. By default services are internal
+  type: NodePort # make service externally accessible. By default services are internal
   selector:
     app: webapp # should match pod label
   ports:
