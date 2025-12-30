@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongo-deployment
+  namespace: learn-k8s
   labels:
     app: mongo
 spec:
@@ -36,6 +37,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongo-service
+  namespace: learn-k8s
 spec:
   selector:
     app: mongo # should match pod label
